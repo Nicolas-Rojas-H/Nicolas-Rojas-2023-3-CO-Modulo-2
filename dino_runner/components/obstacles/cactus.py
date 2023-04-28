@@ -1,0 +1,1 @@
+from dino_runner.components.obstacles.obtacle import obstacle
