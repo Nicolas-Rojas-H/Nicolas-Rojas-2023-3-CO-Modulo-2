@@ -1,4 +1,3 @@
-from typing import Any
 import pygame
 from dino_runner.utils.constants import RUNNING, DUCKING, BG, ICON, SCREEN_HEIGHT, SCREEN_WIDTH, TITLE, FPS, JUMPING
 from pygame.sprite import Sprite
@@ -6,8 +5,7 @@ from pygame.sprite import Sprite
 class dinosaur(Sprite):
  X_POS = 80
  Y_POS = 310
- DUCK_SPEED = 8.5
- Y_DUCK = 350
+ Y_DUCK = 345
  Jump_speed = 8.5
  def __init__(self):
      self.image = RUNNING[0]
@@ -19,7 +17,6 @@ class dinosaur(Sprite):
      self.step_index = 0
      self.dino_jump = False
      self.dino_duck = False
-     self.ducking = self.DUCK_SPEED
 
  def update(self, user_input):
      if self.dino_run:
