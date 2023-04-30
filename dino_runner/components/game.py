@@ -43,7 +43,7 @@ class Game:
         self.player.draw(self.screen)
         self.obstacle_manager.draw(self.screen)
         pygame.display.update()
-        #pygame.display.flip()
+        pygame.display.flip()
 
     def draw_background(self):
         image_width = BG.get_width()
